@@ -7,6 +7,9 @@ import Databinding from './Databinding/Databinding';
 import HandleEvent from './HandleEvent/HandleEvent';
 import StateDemo from './StateDemo/StateDemo';
 import RenderWithMap from './RenderWithMap/RenderWithMap';
+import DemoProps from './Props/DemoProps/DemoProps';
+import ProductList from './Props/ShoesShop/ProductList';
+import DemoXemChiTiet from './Props/DemoXemChiTiet/DemoXemChiTiet';
 //Component App sẽ là nơi chứa toàn bộ giao diện của ứng dụng
 function App() {
 
@@ -19,7 +22,10 @@ function App() {
         {/* <HandleEvent /> */}
         {/* <StateDemo /> */}
         {/* <p className='text-color-yello'>123</p> */}
-        <RenderWithMap />
+        {/* <RenderWithMap /> */}
+        {/* <DemoProps /> */}
+        {/* <ProductList /> */}
+        <DemoXemChiTiet />
     </div>
   );
 }
