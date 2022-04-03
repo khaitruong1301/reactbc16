@@ -10,6 +10,7 @@ import RenderWithMap from './RenderWithMap/RenderWithMap';
 import DemoProps from './Props/DemoProps/DemoProps';
 import ProductList from './Props/ShoesShop/ProductList';
 import DemoXemChiTiet from './Props/DemoXemChiTiet/DemoXemChiTiet';
+import BTGioHang from './DemoRedux/BTGioHang/BTGioHang';
 //Component App sẽ là nơi chứa toàn bộ giao diện của ứng dụng
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
         {/* <RenderWithMap /> */}
         {/* <DemoProps /> */}
         {/* <ProductList /> */}
-        <DemoXemChiTiet />
+        {/* <DemoXemChiTiet /> */}
+        <BTGioHang />
     </div>
   );
 }
