@@ -11,6 +11,7 @@ import DemoProps from './Props/DemoProps/DemoProps';
 import ProductList from './Props/ShoesShop/ProductList';
 import DemoXemChiTiet from './Props/DemoXemChiTiet/DemoXemChiTiet';
 import BTGioHang from './DemoRedux/BTGioHang/BTGioHang';
+import BaiTapGameXucXac from './DemoRedux/BaiTapGameXucXac/BaiTapGameXucXac';
 //Component App sẽ là nơi chứa toàn bộ giao diện của ứng dụng
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
         {/* <DemoProps /> */}
         {/* <ProductList /> */}
         {/* <DemoXemChiTiet /> */}
-        <BTGioHang />
+        {/* <BTGioHang /> */}
+        <BaiTapGameXucXac />
     </div>
   );
 }

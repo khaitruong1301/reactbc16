@@ -1,19 +1,12 @@
 import { combineReducers, createStore } from 'redux';
 import { gioHangReducer } from './reducers/gioHangReducer';
+import { XucXacReducer } from './reducers/XucXacReducer';
 
 
 const rootReducer = combineReducers({
     //Các state của ứng dụng đặt tại đây
     gioHangState: gioHangReducer,
-    //nhiều state
-    stateB: (state = 0,action) => {
-        console.log('action',action);
-        return state;
-    },
-    stateC: (state = '',action) => {
-        console.log('action',action);
-        return state;
-    },
+    XucXacReducer:XucXacReducer
 
 });
 
