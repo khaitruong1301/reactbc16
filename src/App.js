@@ -23,6 +23,7 @@ import Contact from './pages/Contact/Contact';
 import HeaderHome from './Component/HeaderHome/HeaderHome';
 import Profile from './pages/Profile/Profile';
 import Detail from './pages/Detail/Detail';
+import BaiTapFormDangKy from './pages/BaiTapFormDangKy/BaiTapFormDangKy';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route exact path={'/contact'} component={Contact} />
         <Route exact path={'/profile'} component={Profile} />
         <Route exact path={'/detail/:postid'} component={Detail} />
+        <Route exact path={'/baitapform'} component={BaiTapFormDangKy} />
 
         {/* Trang mặc định luôn nằm dưới cùng */}
         <Route exact path={'/'} component={Home} />

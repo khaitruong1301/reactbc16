@@ -1,4 +1,5 @@
 import { combineReducers, createStore } from 'redux';
+import { formDangKyReducer } from './reducers/formDangKyReducer';
 import { gioHangReducer } from './reducers/gioHangReducer';
 import { XucXacReducer } from './reducers/XucXacReducer';
 
@@ -6,7 +7,8 @@ import { XucXacReducer } from './reducers/XucXacReducer';
 const rootReducer = combineReducers({
     //Các state của ứng dụng đặt tại đây
     gioHangState: gioHangReducer,
-    XucXacReducer:XucXacReducer
+    XucXacReducer:XucXacReducer,
+    formDangKyReducer: formDangKyReducer
 
 });
 
