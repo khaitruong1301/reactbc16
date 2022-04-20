@@ -38,7 +38,24 @@ export const formDangKyReducer = (state = stateDefault, action) => {
             state.nguoiDungSua = action.nguoiDung;
             return {...state};
         }
+        case 'CAP_NHAT_NGUOI_DUNG' : {
+            state.mangNguoiDung = [...state.mangNguoiDung];
 
+            //Tìm ra object chỉnh sửa dựa vào tài khoản
+            let nguoiDungCapNhat = state.mangNguoiDung.find(nd=>nd.taiKhoan === action.nguoiDung.taiKhoan);
+            if(nguoiDungCapNhat) {
+                // nguoiDungCapNhat = action.nguoiDung;
+                // nguoiDungCapNhat.email = action.nguoiDung.email;
+                //....
+                for(let key in nguoiDungCapNhat){
+                    nguoiDungCapNhat[key] = action.nguoiDung[key];
+                }
+            }
+
+            return{...state};
+
+
+        }
         default: return state;
     }
 

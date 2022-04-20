@@ -24,6 +24,8 @@ import HeaderHome from './Component/HeaderHome/HeaderHome';
 import Profile from './pages/Profile/Profile';
 import Detail from './pages/Detail/Detail';
 import BaiTapFormDangKy from './pages/BaiTapFormDangKy/BaiTapFormDangKy';
+import Lifecycle from './pages/LifeCycle/Lifecycle';
+import DemoUseState from './pages/Hooks/DemoUseState/DemoUseState';
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
         <Route exact path={'/profile'} component={Profile} />
         <Route exact path={'/detail/:postid'} component={Detail} />
         <Route exact path={'/baitapform'} component={BaiTapFormDangKy} />
+        <Route exact path={'/lifecycle'} component={Lifecycle} />
+        <Route exact path={'/usestate'} component={DemoUseState} />
 
         {/* Trang mặc định luôn nằm dưới cùng */}
         <Route exact path={'/'} component={Home} />
