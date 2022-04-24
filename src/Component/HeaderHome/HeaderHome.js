@@ -32,6 +32,21 @@ export default class HeaderHome extends Component {
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
                                 <NavLink className="dropdown-item" to="/lifecycle">Lifecycle</NavLink>
                                 <NavLink className="dropdown-item" to="/usestate">Use state</NavLink>
+                                <NavLink className="dropdown-item" to="/useeffect">
+                                    Use Effect
+                                </NavLink>
+                                <NavLink className="dropdown-item" to="/usecallback">
+                                    Use callback
+                                </NavLink>
+                               
+                            </div>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Api</a>
+                            <div className="dropdown-menu" aria-labelledby="dropdownId">
+                                <NavLink className="dropdown-item" to="/apircc">Demo api react class</NavLink>
+                                <NavLink className="dropdown-item" to="/apirfc">Demo api react function</NavLink>
+                                
                                
                             </div>
                         </li>

@@ -26,6 +26,10 @@ import Detail from './pages/Detail/Detail';
 import BaiTapFormDangKy from './pages/BaiTapFormDangKy/BaiTapFormDangKy';
 import Lifecycle from './pages/LifeCycle/Lifecycle';
 import DemoUseState from './pages/Hooks/DemoUseState/DemoUseState';
+import DemoUseEffect from './pages/Hooks/DemoUseEffect/DemoUseEffect';
+import ApiRCC from './pages/Api/DemoApi/ApiRCC';
+import ApiRfc from './pages/Api/DemoApi/ApiRfc';
+import DemoUseCallback from './pages/Hooks/DemoUseCallback/DemoUseCallback';
 
 
 function App() {
@@ -44,7 +48,10 @@ function App() {
         <Route exact path={'/baitapform'} component={BaiTapFormDangKy} />
         <Route exact path={'/lifecycle'} component={Lifecycle} />
         <Route exact path={'/usestate'} component={DemoUseState} />
-
+        <Route exact path={'/useeffect'} component={DemoUseEffect} />
+        <Route exact path={'/apircc'} component={ApiRCC} />
+        <Route exact path={'/apirfc'} component={ApiRfc} />
+        <Route exact path={'/usecallback'} component={DemoUseCallback} />
         {/* Trang mặc định luôn nằm dưới cùng */}
         <Route exact path={'/'} component={Home} />
     </Switch>

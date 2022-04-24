@@ -1,5 +1,6 @@
 //rfc
 import React, { useState } from 'react'
+import BaiTapChonXeRFC from './BaiTapChonXeRFC';
 
 
 
@@ -9,7 +10,7 @@ export default function DemoUseState(props) { //thay vì this.props thì rfc có
   const [imgSrc,setImgSrc] = useState('https://i.pravatar.cc?u=1');
   
   return (
-    <div className='container'>
+    <div className='container' style={{marginBottom:500}}>
         <h3>Ví dụ 1: Tăng giảm số lượng</h3>
         <p>Number: {stateNumber}</p>
         <button className='btn btn-primary mr-2' onClick={()=>{
@@ -31,6 +32,9 @@ export default function DemoUseState(props) { //thay vì this.props thì rfc có
                 }}>Random</button>
             </div>
         </div>
+        <hr />
+        <h3>Bài tập 1: Bài tập chọn xe</h3>
+        <BaiTapChonXeRFC />
     </div>
   )
 }
