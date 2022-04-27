@@ -38,7 +38,9 @@ export default class HeaderHome extends Component {
                                 <NavLink className="dropdown-item" to="/usecallback">
                                     Use callback
                                 </NavLink>
-                               
+                                <NavLink className="dropdown-item" to="/usememo">Use memo</NavLink>
+                                <NavLink className="dropdown-item" to="/useref">Use ref</NavLink>
+                                <NavLink className="dropdown-item" to="/useredux">Use Redux</NavLink>
                             </div>
                         </li>
                         <li className="nav-item dropdown">
@@ -46,8 +48,7 @@ export default class HeaderHome extends Component {
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
                                 <NavLink className="dropdown-item" to="/apircc">Demo api react class</NavLink>
                                 <NavLink className="dropdown-item" to="/apirfc">Demo api react function</NavLink>
-                                
-                               
+                                <NavLink className="dropdown-item" to="/reduxapi">Redux api</NavLink>
                             </div>
                         </li>
                     </ul>

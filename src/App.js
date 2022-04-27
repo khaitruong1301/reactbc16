@@ -30,6 +30,10 @@ import DemoUseEffect from './pages/Hooks/DemoUseEffect/DemoUseEffect';
 import ApiRCC from './pages/Api/DemoApi/ApiRCC';
 import ApiRfc from './pages/Api/DemoApi/ApiRfc';
 import DemoUseCallback from './pages/Hooks/DemoUseCallback/DemoUseCallback';
+import DemoUseMemo from './pages/Hooks/DemoUseMemo/DemoUseMemo';
+import DemoUseRef from './pages/Hooks/DemoUseRef/DemoUseRef';
+import FakeBookApp from './pages/Hooks/HookRedux/FakeBookApp';
+import ReduxApi from './pages/ReduxApi/ReduxApi';
 
 
 function App() {
@@ -52,6 +56,10 @@ function App() {
         <Route exact path={'/apircc'} component={ApiRCC} />
         <Route exact path={'/apirfc'} component={ApiRfc} />
         <Route exact path={'/usecallback'} component={DemoUseCallback} />
+        <Route exact path={'/usememo'} component={DemoUseMemo} />
+        <Route exact path={'/useref'} component={DemoUseRef} />
+        <Route exact path={'/useredux'} component={FakeBookApp} />
+        <Route exact path={'/reduxapi'} component={ReduxApi} />
         {/* Trang mặc định luôn nằm dưới cùng */}
         <Route exact path={'/'} component={Home} />
     </Switch>
