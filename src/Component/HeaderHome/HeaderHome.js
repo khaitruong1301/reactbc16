@@ -27,6 +27,12 @@ export default class HeaderHome extends Component {
                         <li className="nav-item">
                             <NavLink exact activeClassName='font-weight-bold bg-white text-dark'  className="nav-link" to="/baitapform">React Form</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink exact activeClassName='font-weight-bold bg-white text-dark'  className="nav-link" to="/hoc">Demo HOC</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink exact activeClassName='font-weight-bold bg-white text-dark'  className="nav-link" to="/antd">AntD</NavLink>
+                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lifecycle - Hooks</a>
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
